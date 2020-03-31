@@ -1,0 +1,35 @@
+.border-color {
+    border-color: #DBDBDB;
+}
+
+.border-squre {
+    border: 1px solid #DBDBDB;
+}
+
+.profile__name {
+    font-size: 2.5rem;
+}
+
+.small-text {
+    font-size: 1.6rem;
+}
+
+.span_block {
+    display: block;
+}
+
+.mini-text {
+    font-size: 1.2rem;
+}
+
+.text_bold {
+    font-weight: 600;
+}
+
+.line-height {
+    line-height: 2.3rem;
+}
+
+.text_middle {
+    font-weight: 500;
+}

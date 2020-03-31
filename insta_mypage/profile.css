@@ -1,0 +1,53 @@
+.profile {
+    padding: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    justify-content: center;
+    background-color: #FAFAFA;
+}
+
+.profile .myprofile_img {
+    width: 150px;
+    height: 150px;
+    margin-right: 7.5rem;
+}
+
+.profile .myprofile_img img {
+    width: 100%;
+}
+
+.profile__text__follow, .profile__text__id {
+    display: flex;
+}
+
+.profile__text__id {
+    align-items: center;
+}
+
+.profile__text__explane span:first-child {
+    margin-bottom: 1.6rem;
+}
+
+.edit-box {
+    padding: .5rem;
+    border-radius: .5rem;
+    font-weight: 400;
+    font-size: 1.4em;
+}
+
+.profile__text__id__column i {
+    font-size: 2.5rem;
+}
+
+.profile__text__follow, .profile__text__id {
+    margin-bottom: 2.5rem;
+}
+
+.profile__text__id>.profile__text__id__column:nth-child(2) {
+    margin: 0rem 2rem;
+}
+
+.profile__text__follow>.profile__posting:nth-child(2){
+    margin: 0rem 5rem;
+}
