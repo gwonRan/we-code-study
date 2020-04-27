@@ -1,0 +1,146 @@
+.login_page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    height: 380px;
+}
+
+
+.login_logo_box {
+    width: 50%;
+    margin: 2rem 0rem 1.5rem;
+}
+
+.login_logo_box img {
+    width: 100%;
+}
+
+.login_input_box input{
+    width: 270px;
+    background-color: #FAFAFA;
+    border-radius: .3rem;
+    font-size: .7rem;
+    padding: .9rem 0rem .7rem .8rem; 
+}
+
+
+/* 왜 input박스가 있는 부모에게 flex를 해주어야하는가? */
+.login_box_input {
+    display: flex;
+    flex-direction: column;
+}
+
+.login_box_input input:first-child {
+    margin-bottom: .5rem;
+}
+
+.login_box_button button {
+    background-color: #BEDFFD;
+    width: 270px;
+    padding: .5rem;
+    font-size: .9rem;
+    font-weight: bold;
+    color: white;
+    outline: 0;
+    border: 0;
+    margin: .8rem 0rem;
+    border-radius: .3rem;
+}
+
+
+/* 또는 라인 */
+
+.login_border_box {
+    display: flex;
+    justify-content: space-around;
+    font-size: .8rem;
+    color: #8e8e8e;
+    width: 350px;
+    font-weight: 600;
+    margin: 1rem 0rem 0rem;
+}
+
+.login_border_box-grayline {
+    border: .1rem solid #DBDBDB;
+    height: .1rem;
+    width: 10%;
+}
+
+
+
+/* SNS로그인 */
+
+.login_forget_box {
+    color: #375185;
+    font-size: .8rem;
+    text-align: center;
+}
+
+
+.login_forget_box .login_forget_box-facebook {
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 1.5rem 0rem 1rem;
+}
+
+
+
+
+
+
+
+/* 계정이 없으신가요? */
+
+.join {
+    background-color: white;
+    width: 350px;  
+    padding: 1.5rem;
+    font-size: .9rem; 
+    font-weight: lighter;
+    text-align: center;
+    margin: .5rem 0rem 1.3rem;
+}
+
+.join span:nth-child(2) {
+    font-weight: bold;
+    color: #289DF7;
+}
+
+
+
+
+
+/* appstore 다운로드 하기 */
+
+.download {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: .85rem;
+}
+
+.download_store {
+    margin-top: 1rem;
+    display: flex;
+}
+
+.download_store .download_store_img {
+    width: 130px;
+}
+
+.download_store .download_store_img:first-child {
+    margin-right: .5rem;
+}
+
+.download_store img{
+    width: 100%;
+}
