@@ -15,11 +15,14 @@ nav .nav_logo {
 
 nav .nav_logo_column:first-child {
     width: 30px;
+    padding-right: .3rem;
     border-right: 1px solid black;
 }
 
 nav .nav_logo_column:last-child {
     width: 110px;
+    padding-left: .3rem;
+    border-left: 1px solid black;
 }
 
 nav .nav_logo_column img{
@@ -134,8 +137,13 @@ main {
 
 /* 피드 좋아요와 코멘트 */
 
+.yourfeed_etc {
+    padding: .5rem 1rem .1rem 1rem;
+}
+
 .yourfeed_like {
     display: flex;
+    padding: 0rem 1rem;
 }
 
 .yourfeed_like img {
@@ -165,29 +173,49 @@ main {
 
 .yourfeed_youredit, .yourfeed_comment {
     font-size: .9rem;
+    padding: .2rem 1rem;
 }
 
 .yourfeed_time {
     font-size: 1rem;
+    padding: .2rem 1rem 1rem 1rem;
 }
 
 /* 댓글달기 */
 .add_comment {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    font-size: 1rem;
+    align-items: center;
 }
 
+.add_comment input{
+    padding: 1rem;
+    outline: 0;
+    border: 0;
+    font-size: 1rem;
+    text-decoration: none;
+    resize: none;
+    width: 260%;
+}
+
+.add_comment button{
+    outline: 0;
+    border: 0;
+    padding: 1rem;
+    font-size: 1rem;
+    color: #BFDFFD;
+}
 
 /* feed 오른쪽 */
 .main-right {
-    margin-top: 2rem;
+    margin-top: 1rem 2rem;
+
 }
 
 .main-right-mine {
     display: flex;
     align-items: center;
+    margin-top: 2rem;
 }
 
 .main-right-mine span {
@@ -234,7 +262,7 @@ aside {
 }
 
 .story_time {
-    font-size: .4rem;
+    font-size: .7rem;
     font-weight: normal;
     display: block;
     margin-top: .3rem;
@@ -247,7 +275,14 @@ aside {
     align-items: center;
 }
 
-.scroll-profile__column {
+.scroll-profile__recommand {
+    display: flex;
+    padding: .3rem 1rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.aside_store_profile .scroll-profile__column {
     width: 45px;
     padding: .1rem;
     border: 2px solid red;
@@ -255,7 +290,47 @@ aside {
     display: flex;
 }
 
+.aside_recommand_profile .scroll-profile__column {
+    width: 45px;
+    border-radius: 100%;
+    display: flex;
+}
+
 .scroll-profile__column img {
     width: 100%;
     border-radius: 100%
+}
+
+.recommend_store_profile{
+    padding: .3rem 1rem;
+}
+
+
+.recommend_store_profile .scroll-profile__column {
+    width: 45px;
+    padding: .1rem;
+    border-radius: 100%;
+}
+
+.aside_recommend_profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: .4rem;
+}
+
+.aside_recommend_profile_add {
+    display: flex;
+    align-items: center;
+}
+
+.aside_recommend_profile_add .aside_follow_text{
+    color: #0095F6;
+    font-size: .9rem;
+}
+
+.scroll-profile__column_name{
+    font-size: .9rem;
+    font-weight: bold;
+    margin-left: .7rem;
 }
