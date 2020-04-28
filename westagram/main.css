@@ -45,7 +45,9 @@ nav .nav_logo_column img{
     border-radius: .3rem;
     outline: 0;
     background-color: #FAFAFA;
+    text-align: center;
 }
+
 
 
 /* 네이게이션 오른쪽 */
