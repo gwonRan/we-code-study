@@ -1,4 +1,7 @@
 /* 네비게이션 바 */
+.navContainer {
+    width: 100%;
+}
 
 nav {
     background-color: white;
@@ -43,9 +46,9 @@ nav .nav_logo_column img{
     width: 215px;
     height: 30px;
     border-radius: .3rem;
-    outline: 0;
     background-color: #FAFAFA;
     text-align: center;
+    outline: 0;
 }
 
 

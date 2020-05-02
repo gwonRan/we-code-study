@@ -8,18 +8,19 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-    <div class="login_page">
+    <div class="loginContainer">
+        <div class="login_page">
         <div class="login my_border">
            <div class="login_logo_box">
                <img src="img/logo_text.png" alt="">
            </div>
            <div class="login_input_box">
                <div class="login_box_input">
-                    <input type="text" placeholder="전화번호, 사용자 이름 또는 이메일" class="login_input_box my_border">
-                    <input type="password" placeholder="비밀번호" class="login_input_box my_border">
+                    <input type="text" placeholder="전화번호, 사용자 이름 또는 이메일" class="login_input_box my_border" id="userId">
+                    <input type="password" placeholder="비밀번호" class="login_input_box my_border" id="userPw">
                </div>
                <div class="login_box_button">
-                    <button>로그인</button>
+                    <button type="button" class="loginBtn">로그인</button>
                </div>
            </div>
            <div class="login_border_box">
@@ -51,5 +52,8 @@
             </div>
         </div>
     </div>
+    </div>
+
+    <script src="login.js"></script>
 </body>
 </html>

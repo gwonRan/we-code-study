@@ -1,3 +1,10 @@
+.loginContainer {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .login_page {
     display: flex;
     flex-direction: column;
@@ -72,6 +79,7 @@
 
 .login_border_box-grayline {
     border-top: 1px solid #DBDBDB;
+    transform: translateY(.3rem);
     width: 40%;
 }
 

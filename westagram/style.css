@@ -1,6 +1,7 @@
 @import "reset.css";
 @import "login.css";
-@import "main.css";
+/* @import "main.css"; */
+@import "westarMain.css";
 
 * {
     box-sizing: border-box;
@@ -9,10 +10,7 @@
 body {
     background-color: #FAFAFA;
     font-size: 10px;
-}
-
-.login_page {
-    margin: 30px auto;
+    color: #3f3f3f;
 }
 
 .my_border {
@@ -29,4 +27,34 @@ body {
 
 .font-bold{
     font-weight: bold;
+}
+
+input:focus {
+    outline: none;
+}
+
+.nameFontSize{
+    font-size: .9rem;
+    font-weight: bold;
+}
+
+.time{
+    font-size: .6rem;
+    color: rgb(172, 172, 172);
+    margin-top: .2rem;
+}
+
+.etcInfo{
+    font-size: .7rem;
+    color: rgb(172, 172, 172);
+    margin-top: .2rem;
+}
+    
+
+@media screen and (max-width: 999px){
+
+    .mainRight{
+        display: none;
+        /* 브라우저의 크기가 1000px미만이면 보이지 않는다. */
+    }
 }

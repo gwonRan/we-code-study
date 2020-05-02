@@ -1,0 +1,329 @@
+/* 상단 네비게이션 바 */
+.navContainer{
+    background-color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+nav{
+    width: 100%;
+    max-width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: .5rem
+}
+
+.navLogo{
+    display: flex;
+    align-items: center;
+}
+
+.navLogoImg{
+    width: 30px;
+    border-right: 1px solid black;
+}
+
+.navLogoText{
+    width: 100px;
+    transform: translateY(.1rem);
+}
+
+.navLogoImg img, .navLogoText img{
+    width: 100%;
+}
+
+
+
+/* navinput */
+nav input{
+    width: 215px;
+    height: 30px;
+    border-radius: .3rem;
+    background-color: #FAFAFA;
+    text-align: center;
+    outline: 0;
+    border: 1px solid #DBDBDB;
+    font-size: .8rem;
+}
+
+
+
+/* navBar cate */
+.navCate ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navCate ul .profileImg{
+    width: 20px;
+}
+
+.navCate ul .profileImg img{
+    width: 100%;
+    border-radius: 100%;
+}
+
+.navCate ul .profileImg:nth-child(1){
+    margin: 0rem .5rem;
+}
+
+
+
+/* main */
+.mainContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+main{
+    width: 100%;
+    max-width: 80%;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.mainFeeds article {
+    margin-right: 2rem;
+    background-color: white;
+    max-width: 620px;
+    margin-bottom: 4rem;
+}
+
+.feedProfile{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .8rem 1rem;
+}
+
+.feedProfile_other{
+    font-size: .7rem;
+}
+
+/* 동그란 사진 이미지  */
+
+.myProfile{
+    width: 35px;
+    margin-right: .65rem;
+}
+
+.myProfile img{
+    width: 100%;
+    border-radius: 100%;
+}
+
+.feedProfile_mine{
+    display: flex;
+    align-items: center;
+}
+
+/* feed의 이미지 */
+.yourfeed_img {
+    width: 100%;
+}
+
+.yourfeed_img img {
+    width: 100%;
+}
+
+/* feed에서의 행위 */
+.feedAction{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem 1rem .2rem;
+}
+
+.feedActionLeft{
+    display: flex;
+    justify-content: space-between;
+}
+
+.feedActionCenter{
+    display: flex;
+    justify-content: space-between;
+}
+
+.feedActionLeftImg{
+    width: 25px;
+}
+
+.feedActionLeftImg img{
+    width: 100%;
+}
+
+.feedActionLeftImg:nth-child(2){
+    margin: 0rem .5rem;
+}
+
+
+.feedLike{
+    padding: 0rem 1rem;
+    display: flex;
+    align-items: center;
+    font-size: .8rem;
+}
+
+.feedLikeImg{
+    width: 20px;
+    margin-right: .5rem;
+}
+
+.feedLikeImg img{
+    width: 100%;
+    border-radius: 100%;
+}
+
+.feedComment{
+    padding: 0rem 1rem;
+    margin-top: .5rem;
+    font-size: .8rem;
+}
+
+.feedCommentOther{
+    display: flex;
+    justify-content: space-between;
+    margin-top: .25rem;
+}
+
+.feedCommentOther_icon{
+    font-size: .7rem;
+    color: rgb(172, 172, 172);
+}
+
+.timeContainer{
+    margin: .5rem 0rem;
+}
+
+
+/* 댓글창 */
+.feedAddComment{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.feedAddComment input{
+    width: 80%;
+    border: 0;
+    outline: 0;
+    padding: 1rem;
+    font-size: .8rem;
+}
+
+.feedAddComment button{
+    outline: 0;
+    border: 0;
+    padding: 1rem;
+    font-size: .8rem;
+    color: #BFDFFD;
+}
+
+/* mainright */
+.myProfileRight{
+    display: flex;
+    align-items: center;
+}
+
+.asideOne{
+    width: 100%;
+    height: 225px;
+    background-color: white;
+    margin: 1rem 0rem;
+    padding: 1rem;
+}
+
+.asideTwo{
+    width: 100%;
+    height: 200px;
+    background-color: white;
+    margin: 1rem 0rem;
+    padding: 1rem;
+}
+
+.asideRecommand_title{
+    font-size: .9rem;
+    font-weight: 600;
+    color: rgb(172, 172, 172);
+}
+
+.asideRecommand_viewAll{
+    font-size: .65rem;
+    font-weight: 700;
+}
+
+.asidePersonContainerOne{
+    height: 185px;
+    overflow-y: scroll;
+}
+
+/* 스크롤바 투명색으로 만들어줌
+::-webkit-scrollbar {
+    width: 0px;  Remove scrollbar space
+    background: transparent;  Optional: just make scrollbar invisible
+} */
+
+.myProfileRightImg{
+    width: 50px;
+    margin-right: .8rem;
+}
+
+.myProfileRightImg img{
+    width: 100%;
+    border-radius: 100%;
+}
+
+.asidePerson{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.asideRecommand{
+    display: flex;
+    justify-content: space-between;
+}
+
+.asidePersonProfile{
+    display: flex;
+    align-items: center;
+}
+
+.myprofileName span:last-child{
+    display: block;
+}
+
+.asidePersonFollow{
+    color: #0095F6;
+    font-size: .75rem;
+    font-weight: 600;
+}
+
+.asideOne .myProfile{
+    border:2px solid red;
+    width: 45px;
+    padding: .1rem;
+    border-radius: 100px;
+    display: flex;
+}
+
+
+/* footer */
+footer ul{
+    width: 290px;
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 1rem;
+    margin-bottom: 1rem;
+}
+
+footer{
+    color: rgb(204, 204, 204);
+    font-size: .7rem;
+}
