@@ -185,19 +185,25 @@ main{
     font-size: .8rem;
 }
 
-.feedCommentOther{
+.feedCommentOther li{
     display: flex;
     justify-content: space-between;
-    margin-top: .25rem;
+    align-items: center;
 }
 
-.feedCommentOther_icon{
+.feedCommentOther_icon button{
+    border: 0;
+    outline: 0;
+}
+
+.fa-heart{
     font-size: .7rem;
     color: rgb(172, 172, 172);
 }
 
 .timeContainer{
     margin: .5rem 0rem;
+    padding-left: 1rem;
 }
 
 
@@ -326,4 +332,19 @@ footer ul{
 footer{
     color: rgb(204, 204, 204);
     font-size: .7rem;
+}
+
+.heartTransition{
+    /* transition: transform ease-in-out 1s;
+    animation: scale(2); */
+    animation: scaleAni 1s ease-in-out;
+}
+
+@keyframes scaleAni{
+    50%{
+        transform: scale(2);
+    }
+    100%{
+        transform: none;
+    }
 }

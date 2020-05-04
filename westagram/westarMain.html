@@ -88,22 +88,25 @@
                             <span class="font-bold">pringco</span>
                             <span>오늘의 신상</span>
                         </div>
-                        <div class="feedCommentOther">
-                            <div class="feedCommentOther_column">
-                                <span class="font-bold">pringco</span>
-                                <span>오늘의 신상</span>
-                            </div>
-                            <div class="feedCommentOther_icon">
-                                <i class="far fa-heart"></i>
-                            </div>
-                        </div>
-                        <div class="timeContainer">
-                            <span class=time>18시간 전</span>     
-                        </div>
+                        <ul class="feedCommentOther">
+                            <li>
+                                <div class="feedCommentOther_column">
+                                    <span class="font-bold">pringco</span>
+                                    <span>오늘의 신상</span>
+                                </div>
+                                <div class="feedCommentOther_icon">
+                                    <button class="heartButton "><i class="far fa-heart"></i></button>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="timeContainer">
+                        <span class=time>18시간 전</span>     
                     </div>
                     <div class="feedAddComment my_border_top">
-                        <input type="text" placeholder="댓글 달기...">
-                        <button type="button">게시</button>
+                        <input type="text" placeholder="댓글 달기..." class="inputBox">
+                        <button type="submit" class="submitBox">게시</button>
                     </div>
                 </article>
                 <article class="my_border">
@@ -298,5 +301,6 @@
             </div>
         </main>
     </div>
+    <script src="westarMain.js"></script>
 </body>
 </html>
