@@ -19,7 +19,15 @@
                 </div>
             </div>
             <div class="navSearch">
-                <input type="text" placeholder="검색">
+                <img src="img/search-solid.svg" alt="" class="navSearchIcon">
+                <input type="text" placeholder="검색" class="navInput">
+            </div>
+            <div class="navSearchHide">
+                <div class="inputHideBox">
+                    <img src="img/search-solid.svg" alt="" class="navSearchIcon">
+                    <input type="text" placeholder="검색" class="navInput">
+                </div>
+                <button class="delete"><i class="fas fa-times"></i></button>
             </div>
             <div class="navCate">
                 <ul>
@@ -68,7 +76,9 @@
                     <div class="feedAction">
                         <div class="feedActionLeft">
                             <div class="feedActionLeftImg">
-                                <button class="heartBtn"><img src="img/heart.png" alt="" class="heartImg"></div></button>
+                                <button class="heartBtn bigHeart">
+                                    <img src="img/heart.png" alt="" class="heartImg"></div>
+                                </button>
                             <div class="feedActionLeftImg"><button class="heartBtn"><img src="img/comment.png" alt=""></button></div>
                             <div class="feedActionLeftImg"><button class="heartBtn"><img src="img/share.png" alt=""></button></div>
                         </div>
@@ -90,19 +100,19 @@
                             <span>오늘의 신상</span>
                         </div>
                         <ul class="feedCommentOther">
-                            <li>
+                            <li class="feedList">
                                 <div class="feedCommentOther_column">
                                     <span class="font-bold">pringco</span>
-                                    <span>오늘의 신상</span>
+                                    <span class="inputVal">오늘의 신상</span>
                                 </div>
                                 <div class="feedCommentOther_icon">
                                     <button class="heartButton "><i class="far fa-heart"></i></button>
                                 </div>
                             </li>
-                            <li>
+                            <li class="feedList">
                                 <div class="feedCommentOther_column">
                                     <span class="font-bold">pringco</span>
-                                    <span>오늘의 신상</span>
+                                    <span class="inputVal">오늘의 신상</span>
                                 </div>
                                 <div class="feedCommentOther_icon">
                                     <button class="heartButton"><i class="far fa-heart"></i></button>
@@ -140,13 +150,16 @@
                     <!-- feed에서의 행위 -->
                     <div class="feedAction">
                         <div class="feedActionLeft">
-                            <div class="feedActionLeftImg"><img src="img/heart.png" alt=""></div>
-                            <div class="feedActionLeftImg"><img src="img/comment.png" alt=""></div>
-                            <div class="feedActionLeftImg"><img src="img/share.png" alt=""></div>
+                            <div class="feedActionLeftImg">
+                                <button class="heartBtn bigHeart">
+                                    <img src="img/heart.png" alt="" class="heartImg"></div>
+                                </button>
+                            <div class="feedActionLeftImg"><button class="heartBtn"><img src="img/comment.png" alt=""></button></div>
+                            <div class="feedActionLeftImg"><button class="heartBtn"><img src="img/share.png" alt=""></button></div>
                         </div>
                         <div class="feedActionLeft">
                             <div class="feedActionLeftImg">
-                                <img src="img/bookmark.png" alt="">
+                                <button class="bookmarkBtn"><img src="img/bookmark.png" alt="" class="bookmarkImg"></button>
                             </div>
                         </div>
                     </div>
@@ -154,29 +167,116 @@
                         <div class="feedLikeImg">
                             <img src="img/gwon.jpg" alt="">
                         </div>
-                        <span class="font-bold">gwonRan</span>님 외<span class="font-bold">20명</span>이 좋아합니다
+                        <span class="font-bold">gwonRan</span>님 외 <span class="font-bold">20명</span>이 좋아합니다
                     </div>
                     <div class="feedComment">
                         <div class="feedCommentMore">
                             <span class="font-bold">pringco</span>
                             <span>오늘의 신상</span>
                         </div>
-                        <div class="feedCommentOther">
-                            <div class="feedCommentOther_column">
-                                <span class="font-bold">pringco</span>
-                                <span>오늘의 신상</span>
-                            </div>
-                            <div class="feedCommentOther_icon">
-                                <i class="far fa-heart"></i>
-                            </div>
-                        </div>
-                        <div class="timeContainer">
-                            <span class=time>18시간 전</span>     
-                        </div>
+                        <ul class="feedCommentOther">
+                            <li class="feedList">
+                                <div class="feedCommentOther_column">
+                                    <span class="font-bold">pringco</span>
+                                    <span class="inputVal">오늘의 신상</span>
+                                </div>
+                                <div class="feedCommentOther_icon">
+                                    <button class="heartButton "><i class="far fa-heart"></i></button>
+                                </div>
+                            </li>
+                            <li class="feedList">
+                                <div class="feedCommentOther_column">
+                                    <span class="font-bold">pringco</span>
+                                    <span class="inputVal">오늘의 신상</span>
+                                </div>
+                                <div class="feedCommentOther_icon">
+                                    <button class="heartButton"><i class="far fa-heart"></i></button>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="timeContainer">
+                        <span class=time>18시간 전</span>     
                     </div>
                     <div class="feedAddComment my_border_top">
-                        <input type="text" placeholder="댓글 달기...">
-                        <button type="button">게시</button>
+                        <input type="text" placeholder="댓글 달기..." class="inputBox">
+                        <button type="submit" class="submitBox">게시</button>
+                    </div>
+                </article>
+                <article class="my_border">
+                    <div class="feedProfile">
+                        <div class="feedProfile_mine">
+                            <div class="myProfile">
+                                <img src="img/gwon.jpg" alt="" class="">
+                            </div>
+                            <div class="myprofileName">
+                                <span class="font-bold nameFontSize">gwonRan</span>
+                            </div>
+                        </div>
+                        <div class="feedProfile_other">
+                            <i class="fas fa-ellipsis-h"></i>
+                        </div>
+                    </div>
+                    <!-- feed의 이미지 -->
+                    <div class="yourfeed_img">
+                        <img src="img/pringco.jpg" alt="">
+                    </div>
+                    <!-- feed에서의 행위 -->
+                    <div class="feedAction">
+                        <div class="feedActionLeft">
+                            <div class="feedActionLeftImg">
+                                <button class="heartBtn bigHeart">
+                                    <img src="img/heart.png" alt="" class="heartImg"></div>
+                                </button>
+                            <div class="feedActionLeftImg"><button class="heartBtn"><img src="img/comment.png" alt=""></button></div>
+                            <div class="feedActionLeftImg"><button class="heartBtn"><img src="img/share.png" alt=""></button></div>
+                        </div>
+                        <div class="feedActionLeft">
+                            <div class="feedActionLeftImg">
+                                <button class="bookmarkBtn"><img src="img/bookmark.png" alt="" class="bookmarkImg"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feedLike">
+                        <div class="feedLikeImg">
+                            <img src="img/gwon.jpg" alt="">
+                        </div>
+                        <span class="font-bold">gwonRan</span>님 외 <span class="font-bold">20명</span>이 좋아합니다
+                    </div>
+                    <div class="feedComment">
+                        <div class="feedCommentMore">
+                            <span class="font-bold">pringco</span>
+                            <span>오늘의 신상</span>
+                        </div>
+                        <ul class="feedCommentOther">
+                            <li class="feedList">
+                                <div class="feedCommentOther_column">
+                                    <span class="font-bold">pringco</span>
+                                    <span class="inputVal">오늘의 신상</span>
+                                </div>
+                                <div class="feedCommentOther_icon">
+                                    <button class="heartButton "><i class="far fa-heart"></i></button>
+                                </div>
+                            </li>
+                            <li class="feedList">
+                                <div class="feedCommentOther_column">
+                                    <span class="font-bold">pringco</span>
+                                    <span class="inputVal">오늘의 신상</span>
+                                </div>
+                                <div class="feedCommentOther_icon">
+                                    <button class="heartButton"><i class="far fa-heart"></i></button>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="timeContainer">
+                        <span class=time>18시간 전</span>     
+                    </div>
+                    <div class="feedAddComment my_border_top">
+                        <input type="text" placeholder="댓글 달기..." class="inputBox">
+                        <button type="submit" class="submitBox">게시</button>
                     </div>
                 </article>
             </div>

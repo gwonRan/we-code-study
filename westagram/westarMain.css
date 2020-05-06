@@ -4,6 +4,8 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    position: fixed;
+    top: 0;
 }
 
 nav{
@@ -37,17 +39,74 @@ nav{
 
 
 /* navinput */
-nav input{
+nav .navSearch{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navSearchHide, .navSearch{
     width: 215px;
     height: 30px;
     border-radius: .3rem;
     background-color: #FAFAFA;
-    text-align: center;
-    outline: 0;
     border: 1px solid #DBDBDB;
-    font-size: .8rem;
 }
 
+.navSearchHide{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem;
+    display: none;
+}
+
+nav .navSearch input{
+    background-color: #FAFAFA;
+    text-align: center;
+    outline: 0;    
+    font-size: .8rem;
+    border: 0;
+}
+
+.navSearch img{
+    width: .7rem;
+    position: absolute;
+    left: 37%;
+}
+
+.navSearchHide input{
+    outline: 0;
+    font-size: .8rem;
+    background-color: #FAFAFA;
+    border: 0;
+}
+
+.navSearchHide img{
+    width: .7rem;
+}
+
+/* .searchIconTran{
+    transform: translateX(1rem);
+} */
+
+.delete{
+    width: 1rem;
+    height: 1rem;
+    background-color: rgb(204, 204, 204);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 500;
+    outline: 0;
+    border: 0;
+    right: 5%;
+    font-size: .5rem;
+    text-align: center;
+}
 
 
 /* navBar cate */
@@ -70,13 +129,12 @@ nav input{
     margin: 0rem .5rem;
 }
 
-
-
 /* main */
 .mainContainer {
     width: 100%;
     display: flex;
     justify-content: center;
+    margin: 3rem;
 }
 
 main{

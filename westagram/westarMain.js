@@ -1,31 +1,37 @@
-// const mainInputContainer = document.querySelector('.feedAddComment');
-const ulTag = document.querySelector('.feedCommentOther');
+const submitBox = document.querySelector('.submitBox');
 
+const ulTag = document.querySelectorAll('.feedCommentOther');
+let commentList = document.querySelector('.feedList');
+// let liNode = commentList.cloneNode(true);
 
-let userSpan = document.createElement('span');
-userSpan.innerHTML = 'gwonRan';
-userSpan.className = 'font-bold';
+// ulTag.appendChild(liNode);
 
-let innerInput = document.createElement('span');
-innerInput.innerText = "안녕";
+const inputBox = document.querySelectorAll('.inputBox');
+const mainSubmit = document.querySelectorAll('.submitBox');
 
-let totalBox = document.createElement('div');
-totalBox.className = 'feedCommentOther_column';
-totalBox.appendChild(userSpan);
-totalBox.appendChild(innerInput);
+for(let i=0; i<inputBox.length; i++){
+    inputBox[i].addEventListener('keyup', function(e){
+        // const mainSubmit = document.querySelector('.submitBox');
+        mainSubmit[i].style.color = '#0095F6';
 
+        if(e.keyCode==13&&inputBox[i].value.length>0){
+            let liNode = commentList.cloneNode(true);
+            let nodeSpan = liNode.querySelector('.font-bold');
+            nodeSpan.innerHTML = 'gwonRan';
+            let nodeVal = liNode.querySelector('.inputVal');
+            nodeVal.innerHTML = inputBox[i].value;
 
-let heartBox = document.createElement('div');
-heartBox.className = 'feedCommentOther_icon';
+            let nodeHeart = liNode.querySelector('.fa-heart');
+            nodeHeart.addEventListener('click', function(){
+                iconSolid(nodeHeart,"red","black");
+            });
 
-
-
-let commentList = document.createElement('li');
-commentList.appendChild(totalBox);
-
-
-
-ulTag.appendChild(commentList);
+            ulTag[i].appendChild(liNode);
+            inputBox[i].value = null;
+            mainSubmit[i].style.color = '#BFDFFD';
+        }
+    });
+}
 
 // mainInputContainer.addEventListener('keyup', function(){
 //     const mainSubmit = document.querySelector('.submitBox');
@@ -83,10 +89,11 @@ function iconTranstion(e){
 const button = document.querySelectorAll('.heartButton');
 const heartAll = document.querySelectorAll('.fa-heart');
 
-const heartBtn = document.querySelectorAll('.heartBtn');
+const heartBtn = document.querySelectorAll('.bigHeart');
 const heartImg = document.querySelectorAll('.heartImg')
 const bookmarkBtn = document.querySelectorAll('.bookmarkBtn');
-const bookmarkImg = document.querySelectorAll('.bookmarkImg')
+const bookmarkImg = document.querySelectorAll('.bookmarkImg');
+console.log(heartBtn);
 
 for(let i=0; i<button.length; i++){
     button[i].addEventListener('click', function(){
@@ -107,18 +114,20 @@ function iconSolid(el,col1,col2){
 }
 
 for(let i=0; i<heartImg.length; i++){
+    
     heartBtn[i].addEventListener('click', function(){
-        imgSolid(heartImg[i],"img/heart.png", "img/redlike.png");
+        console.log(i);
+        imgSolid(heartImg[i], "img/heart.png", "img/redlike.png");
     });
 }
 
 for(let i=0; i<bookmarkImg.length; i++){
     bookmarkBtn[i].addEventListener('click', function(){
-        imgSolid(bookmarkImg[i],"img/bookmark.png", "img/blacksaved.PNG");
+        imgSolid(bookmarkImg[i], "img/bookmark.png", "img/blacksaved.PNG");
     });
 }
 
-function imgSolid(element ,img1, img2){
+function imgSolid(element , img1, img2){
     if(element.src.includes(img1)){
         element.src=img2;
     } else{
@@ -183,5 +192,23 @@ fllow.forEach(fllowEl => {
     fllowEl.addEventListener('click', function(){
         fllowEl.innerHTML =' ';
         // fllowEl.style.color = '#c1c1c1';
+    });
+});
+
+
+//nav
+const search = document.querySelector('.navSearch');
+
+search.addEventListener('click', function(){
+    const navSearchHide = document.querySelector('.navSearchHide');
+    const deleteButton = navSearchHide.querySelector('.delete');
+    // searchIcon.classList.add('searchIconTran');
+    
+    navSearchHide.style.display = 'flex';
+    search.style.display = 'none';
+
+    deleteButton.addEventListener('click', function(){
+        navSearchHide.style.display = 'none';
+        search.style.display = 'flex';
     });
 });
