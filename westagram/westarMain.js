@@ -208,7 +208,9 @@ search.addEventListener('click', function(){
     search.style.display = 'none';
 
     deleteButton.addEventListener('click', function(){
+        const navInput = navSearchHide.querySelector('.navInput');
         navSearchHide.style.display = 'none';
+        navInput.value = null;
         search.style.display = 'flex';
     });
 });
